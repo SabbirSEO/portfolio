@@ -42,13 +42,13 @@ p {
 }
 
 /* My Resume */
-.resume-h2 {
-    text-align: center;
-}
-
 .inner-container {
     max-width: 1140px;
     margin: 50px auto;
+}
+
+.resume-h2 {
+    text-align: center;
 }
 
 .my-resume {
@@ -70,4 +70,27 @@ hr {
 
 .skill-item {
     width: 500px;
+}
+
+
+/* Mobile Styles */
+
+@media (max-width: 767px) {
+    .resume-h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .my-resume {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .edu-item, .edu-item {
+        width: 90%;
+    }
+
+    hr {
+        width: 100%;
+    }
 }
